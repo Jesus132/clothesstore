@@ -1,0 +1,19 @@
+@import "../../../styles/card/card";
+
+.search {
+  padding: 15px 30px;
+  width: 100%;
+  height: 100%;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+  display: grid;
+  grid-auto-rows: 30rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+
+  .card{
+    flex-direction: column;
+    justify-self: center;
+  }
+  
+}

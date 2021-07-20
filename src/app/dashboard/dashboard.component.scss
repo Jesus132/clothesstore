@@ -1,0 +1,110 @@
+.dashboard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    width: 100%;
+    height: 10vh;
+  }
+
+  .router {
+    width: 100%;
+    height: 10vh;
+    padding: 0 200px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .line {
+      cursor: pointer;
+      fill: white;
+      //   border-right: 1px solid;
+      //   padding: 0px 12px 0px 12px;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .page {
+    width: 100%;
+    max-height: 80vh;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+      height: 1px;
+      border-radius: 25px;
+      background: #ffffff;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(0, 0, 0);
+      &:hover {
+        background-color: #000000a2;
+      }
+    }
+
+    .home {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media(max-width: 660px) {
+
+  .dashboard {
+
+    .header {
+      height: 20vh;
+    }
+
+    // .page {
+    //   max-height: 90vh;
+    // }
+
+    .router {
+      background-color: white;
+      color: black;
+      align-items: flex-start;
+
+      .line {
+        border: 0;
+      }
+
+      svg {
+        display: block;
+        fill: black;
+        position: absolute;
+        z-index: 10;
+        top: 8px;
+        right: 8px;
+      }
+    }
+
+    ._on {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 40%;
+      height: 100%;
+      z-index: 9;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 50px 0 0 30px;
+    }
+
+    ._off {
+      display: none;
+    }
+
+    .px-3 {
+      padding: 0 !important;
+    }
+  }
+}

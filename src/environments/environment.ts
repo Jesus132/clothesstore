@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: true,
+  api:'https://api.mercadolibre.com/sites/MLA',
+  id_category: 'MLA1430'
 };
 
 /*

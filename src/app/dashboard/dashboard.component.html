@@ -1,0 +1,34 @@
+<div class="dashboard">
+
+    <div class="header">
+        <app-header></app-header>
+    </div>
+
+    <div class="router" [ngClass]="search.routerOnOff ? '_on':'_off'">
+        <p (click)="tab('Hombre')" class="line">
+            Hombre
+            <svg class="line" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 3h18v2H3V3z"/></svg>
+        </p>
+        <p (click)="tab('Mujer')" class="line">Mujer</p>
+        <!-- <svg class="line" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 3h18v2H3V3z"/></svg> -->
+        <p (click)="tab('Junior')" class="line">Junior</p>
+        <!-- <svg class="line" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 3h18v2H3V3z"/></svg> -->
+        <p (click)="tab('Niños')" class="line">Niños</p>
+        <!-- <svg class="line" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 3h18v2H3V3z"/></svg> -->
+        <p (click)="tab('Accesorios')" class="line">Accesorios</p>
+        <p class="px-3">Ofertas</p>
+        <svg (click)="search.routerOnOff=!search.routerOnOff" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+    </div>
+
+    <div class="page">
+        <div class="home">
+            <router-outlet *ngIf="search.listProduct.length <= 0 && !search.carShopOnOff"></router-outlet>
+            <app-search *ngIf="search.listProduct.length > 0 || search.carShopOnOff"></app-search>
+            <app-footer></app-footer>
+        </div>
+    </div>
+        
+
+
+
+</div>

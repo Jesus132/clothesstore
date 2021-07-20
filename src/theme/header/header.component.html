@@ -1,0 +1,59 @@
+<div class="header px-3">
+
+  <svg class="icon" (click)="search.routerOnOff=!search.routerOnOff" xmlns="http://www.w3.org/2000/svg" height="24px"
+    viewBox="0 0 24 24" width="24px" fill="#000000">
+    <path d="M0 0h24v24H0V0z" fill="none" />
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+  </svg>
+
+  <svg class="title" xmlns="http://www.w3.org/2000/svg" width="446" height="95" viewBox="0 0 446 95">
+    <defs>
+      <style>
+        .a {
+          font-size: 71.554px;
+          font-family: Bebas;
+        }
+
+      </style>
+    </defs><text class="a" transform="translate(0 84)">
+      <tspan x="0" y="0">ClothesStore</tspan>
+    </text>
+  </svg>
+ 
+  <div class="input-group mb-3">
+    <input (input)="searchinput($event)" type="text" class="form-control" placeholder="Buscar productos"
+      aria-label="Recipient's username" aria-describedby="button-addon2">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+        <svg class="search_icon" xmlns="http://www.w3.org/2000/svg" width="33.995" height="33.889" viewBox="0 0 33.995 33.889"><defs><style>.a{stroke:#000;}</style></defs><path class="a" d="M37,35l-9.145-9.23a13.032,13.032,0,1,0-1.978,2l9.085,9.171A1.407,1.407,0,0,0,36.944,37,1.417,1.417,0,0,0,37,35ZM17.609,27.886a10.291,10.291,0,1,1,7.278-3.014A10.227,10.227,0,0,1,17.609,27.886Z" transform="translate(-4 -3.993)"/></svg>
+    </button>
+  </div>
+
+  <svg class="carShop" (click)="search.carShopOnOff=!search.carShopOnOff" xmlns="http://www.w3.org/2000/svg" width="43.575" height="38.298" viewBox="0 0 43.575 38.298">
+    <g transform="translate(0 0)">
+      <g transform="translate(0 0)">
+        <path
+          d="M14.039,56.533H37.192a1.277,1.277,0,0,0,1.227-.926l5.106-17.873A1.277,1.277,0,0,0,42.3,36.106H11.1L10.183,32a1.277,1.277,0,0,0-1.246-1H1.277a1.277,1.277,0,1,0,0,2.553H7.912l4.609,20.742a3.829,3.829,0,0,0,1.521,7.344H37.192a1.277,1.277,0,1,0,0-2.553H14.043a1.276,1.276,0,0,1,0-2.553ZM40.606,38.66,36.229,53.979H15.067l-3.4-15.319Z"
+          transform="translate(0 -31)" />
+        <path
+          d="M150,394.83a3.83,3.83,0,1,0,3.83-3.83A3.834,3.834,0,0,0,150,394.83Zm3.83-1.277a1.277,1.277,0,1,1-1.277,1.277A1.278,1.278,0,0,1,153.83,393.553Z"
+          transform="translate(-137.234 -360.361)" />
+        <path
+          d="M362,394.83a3.83,3.83,0,1,0,3.83-3.83A3.834,3.834,0,0,0,362,394.83Zm3.83-1.277a1.277,1.277,0,1,1-1.277,1.277A1.278,1.278,0,0,1,365.83,393.553Z"
+          transform="translate(-331.191 -360.361)" />
+      </g>
+    </g>
+  </svg>
+
+  <svg class="profile" xmlns="http://www.w3.org/2000/svg" width="38.11" height="38.128" viewBox="0 0 38.11 38.128">
+    <g transform="translate(0 0)">
+      <g transform="translate(0 0)">
+        <path
+          d="M600.575,67.984a10.267,10.267,0,1,1,12.095-.011c.118.052.218.1.321.141a18.912,18.912,0,0,1,12.451,15.052,19.287,19.287,0,0,1,.221,2.736,1.456,1.456,0,0,1-1.6,1.633q-6.185.005-12.37,0l-22.312,0c-1.32,0-1.84-.52-1.826-1.825A19.088,19.088,0,0,1,600.115,68.17C600.257,68.119,600.4,68.057,600.575,67.984Zm-9.981,16.595h32.033a16.082,16.082,0,0,0-32.033,0Zm16.067-32.237a7.331,7.331,0,1,0,7.282,7.354A7.333,7.333,0,0,0,606.661,52.342Z"
+          transform="translate(-587.556 -49.411)" />
+      </g>
+    </g>
+  </svg>
+
+  <button class="btn btn-outline-secondary" type="button" id="button-addon1">Iniciar sesión</button>
+
+</div>

@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  api:'https://api.mercadolibre.com/sites/MLA',
+  id_category: 'MLA1430'
 };
